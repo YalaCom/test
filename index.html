@@ -45,9 +45,11 @@
       top: 0;
       width: 100%;
       z-index: 1000;
-      background: rgba(0,0,0,0.85);
+      background: rgba(255, 255, 255, 0.15);
       backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(0,240,255,0.3);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
       padding: 15px 0;
     }
     .header-container {
@@ -389,6 +391,7 @@
 </head>
 <body>
   <canvas id="particles"></canvas>
+
   <header>
     <div class="header-container">
       <div class="logo">WWLC</div>
@@ -399,6 +402,7 @@
       </div>
     </div>
   </header>
+
   <section class="hero">
     <div class="hero-logo-wrapper">
       <img src="https://i.postimg.cc/MH8yH68Q/wwls.jpg" alt="WWLC Main Image">
@@ -406,23 +410,24 @@
     <div class="hero-content" data-aos="fade-up">
       <h1>WWLC</h1>
       <h2>WORLD WIDE LOGISTICS COMPANY</h2>
-      <p>Самая мощная и атмосферная ВТС в Euro Truck Simulator 2. Ежедневные конвои • Реалистичная логистика • Братство на дороге</p>
+      <p>Самая мощная и атмосферная ВТС в Euro Truck Simulator 2 и TruckersMP. Ежедневные конвои • Реалистичная логистика • Братство на дороге</p>
       <div class="hero-stats">
         <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
-          <div class="stat-number">20+</div>
+          <div class="stat-number">200+</div>
           <div>Активных дальнобойщиков</div>
         </div>
         <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
-          <div class="stat-number">1млн+</div>
+          <div class="stat-number">500 000+</div>
           <div>Километров пройдено</div>
         </div>
         <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
-          <div class="stat-number">Конвои</div>
-          <div>Сбор 20:30 отъезд конвоя в 21:00</div>
+          <div class="stat-number">20:30-21:00</div>
+          <div>Конвои 20:30-21:00</div>
         </div>
       </div>
     </div>
   </section>
+
   <section id="about">
     <h2 class="section-title" data-aos="fade-up">О КОМПАНИИ</h2>
     <div class="cards-grid">
@@ -440,24 +445,25 @@
       </div>
     </div>
   </section>
+
   <section id="faq" style="background: var(--bg-secondary);">
     <h2 class="section-title" data-aos="fade-up">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
     <div class="faq-container">
       <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
         <div class="faq-question">Как вступить в WWLC? <span class="arrow">▼</span></div>
-        <div class="faq-answer">Заходишь в Телеграм → пишешь администратору.</div>
+        <div class="faq-answer">Заходишь в Discord → пишешь администратору команду !зарегистрироваться</div>
       </div>
       <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
         <div class="faq-question">Какие требования? <span class="arrow">▼</span></div>
-        <div class="faq-answer">Возраст 16+, ETS2 (ДЛС не нужны), TruckersMP, микрофон (Желательно)</div>
+        <div class="faq-answer">Возраст 16+, ETS2 (ДЛС не нужны), TruckersMP, микрофон</div>
       </div>
       <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
         <div class="faq-question">Как часто конвои? <span class="arrow">▼</span></div>
-        <div class="faq-answer">Каждый день в сбор 20:30 выезжаем в 21:00 МСК. Плюс тематические и дополнительные конвои.</div>
+        <div class="faq-answer">Каждый день в 20:30-21:00 МСК. Плюс тематические и дополнительные конвои.</div>
       </div>
       <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
         <div class="faq-question">Собеседование? <span class="arrow">▼</span></div>
-        <div class="faq-answer">Ничего заполнять не надо! Просто короткий дружеский разговор с адмиистрацией.</div>
+        <div class="faq-answer">Ничего заполнять не надо! Просто короткий дружеский разговор.</div>
       </div>
       <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
         <div class="faq-question">Можно с читами? <span class="arrow">▼</span></div>
@@ -465,17 +471,19 @@
       </div>
       <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
         <div class="faq-question">Как связаться с админами? <span class="arrow">▼</span></div>
-        <div class="faq-answer">Самый быстрый способ – Телеграм (Сслка ниже)</div>
+        <div class="faq-answer">Самый быстрый способ – Discord (пиши любому онлайн-админу)</div>
       </div>
     </div>
   </section>
+
   <section class="admin-contact" data-aos="fade-up">
     <h2>СВЯЗЬ С АДМИНИСТРАЦИЕЙ</h2>
-    <p>Вопросы? Заявка? Просто поболтать? – Пиши, я всегда онлайн и рад новым участникам.</p>
+    <p>Вопросы? Заявка? Просто поболтать? – Пиши, мы всегда онлайн и рады</p>
     <div class="admin-buttons">
       <a href="https://t.me/WWLC_Owner" target="_blank" class="btn-neon">Telegram Owner</a>
     </div>
   </section>
+
   <section id="join">
     <h2 class="section-title" data-aos="fade-up">ПРИСОЕДИНЯЙСЯ К WWLC СЕЙЧАС</h2>
     <div class="contact-buttons">
@@ -484,6 +492,7 @@
       <a href="https://truckersmp.com/vtc/84514" target="_blank" class="btn-neon">TruckersMP</a>
     </div>
   </section>
+
   <footer>
     <div class="footer-links">
       <a href="https://disk.yandex.ru/d/n5sLukq6X-LW9g" target="_blank" class="btn-neon">Скачать профиль</a>
@@ -491,6 +500,7 @@
     <p>© 2025-2026 WWLC – World Wide Logistics Company. Все права защищены</p>
     <p style="margin-top:30px;">Сайт создан с любовью для настоящих дальнобойщиков</p>
   </footer>
+
   <!-- Частицы -->
   <script>
     const canvas = document.getElementById('particles');
@@ -537,6 +547,7 @@
     }
     animateParticles();
   </script>
+
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -544,16 +555,20 @@
       once: true,
       easing: 'ease-out'
     });
+
     document.querySelectorAll('.faq-question').forEach(question => {
       question.addEventListener('click', function() {
         const answer = this.nextElementSibling;
         const isOpen = answer.classList.contains('open');
+
         document.querySelectorAll('.faq-answer.open').forEach(openAnswer => {
           if (openAnswer !== answer) openAnswer.classList.remove('open');
         });
+
         document.querySelectorAll('.faq-question.active').forEach(q => {
           if (q !== this) q.classList.remove('active');
         });
+
         if (isOpen) {
           answer.classList.remove('open');
           this.classList.remove('active');
